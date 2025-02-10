@@ -8,6 +8,8 @@
 </head>
 <body>
     <div class="envelope" onclick="toggleEnvelope()">
+        <div class="flowerboquet flowerboquet1"><img src="pics/boquet.png" alt="flowers"></div>
+        <div class="flowerboqueta flowerboqueta1"><img src="pics/boquet.png" alt="flowers"></div>
         <div class="flap"></div>
         <div class="body"></div>
         <div class="letter">

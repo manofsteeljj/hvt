@@ -15,7 +15,7 @@ body {
     height: 250px; 
     cursor: pointer;
     transition: transform 0.5s ease-in-out;
-    overflow: visible; /* Allow hearts to float out of the envelope */
+    overflow: visible; 
 }
 
 .envelope.open {
@@ -64,6 +64,57 @@ body {
 
 .envelope.open .letter {
     transform: scaleY(1);
+}
+
+.flowerboquet {
+    position: absolute;
+    opacity: 0;
+    animation: floatFlower 2s ease-in-out infinite;
+}
+
+.flowerboqueta {
+    position: absolute;
+    opacity: 0;
+    animation: floatFlower1 2s ease-in-out infinite;
+}
+
+.flowerboquet1 {
+    left: 70%;
+}
+
+.flowerboqueta1 {
+    right: 70%;
+}
+
+@keyframes floatFlower1 {
+    0% {
+        transform: translateY(0) scale(1) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-30px) scale(1.3) rotate(-10deg);
+    }
+    100% {
+        transform: translateY(-60px) scale(1.7) rotate(-25deg);
+    }
+}
+
+
+@keyframes floatFlower {
+    0% {
+        transform: translateY(0) scale(1) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-30px) scale(1.3) rotate(10deg);
+    }
+    100% {
+        transform: translateY(-60px) scale(1.7) rotate(25deg);
+    }
+}
+.envelope.open .flowerboquet {
+    opacity: 1;
+}
+.envelope.open .flowerboqueta {
+    opacity: 1;
 }
 
 .heart {
